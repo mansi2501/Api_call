@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "email": "mansi.trivedi@indianic.com",
+      "password": "mammmm",
+      "address": "Ahmedabad",
+      "website": "mansi.com",
+      "id": 3
+    },
+    {
+      "email": "abc123@gmail.com",
+      "password": "abc",
+      "address": "Ahmedabad",
+      "website": "abc.com",
+      "id": 4
+    },
+    {
+      "email": "hello@123.com",
+      "password": "aaa",
+      "address": "Rajasthan",
+      "website": "hello.com",
+      "id": 5
+    }
+  ]
+}

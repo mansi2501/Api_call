@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import Navdata from './components/Navdata';
+import GetData from './components/GetData';
+import SetData from './components/SetData';
+import EditData from './components/EditData';
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Router>
+      <div className="App">
+        <Navdata />
+        <Switch>
+          <Route exact path="/" component={GetData} />
+          <Route exact path="/getdata" component={GetData} />
+          <Route exact path="/setdata" component={SetData} />
+          <Route exact path="/editdata/:id" component={EditData} />
+        </Switch>
+      </div>
+    </Router>
     </div>
   );
 }
